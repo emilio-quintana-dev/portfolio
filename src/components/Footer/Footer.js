@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import {
   FooterContainer,
@@ -15,7 +16,6 @@ import {
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
-  WebsiteRights,
   SocialIcon,
   SocialIcons,
   SocialIconLink,
@@ -23,17 +23,40 @@ import {
 import { Button } from "../../globalStyles";
 
 const Footer = () => {
+  const [message, setMessage] = useState({ message: "" });
+
+  var service_id = "default_service";
+  var template_id = "contact_form";
+  var user_id = "user_0s0p6hVDhQaHTDwYYA0vo";
+
+  const sendEmail = () => {
+    emailjs.send(service_id, template_id, message, user_id);
+    setMessage({ message: "I will be in touch!" });
+  };
+
   return (
     <>
       <FooterContainer>
         <FooterSubscription>
           <FooterSubHeading>Feel free to reach out!</FooterSubHeading>
           <FooterSubText>
-            I'll be happy to talk <span>👾</span>
+            I'll be happy to talk{" "}
+            <span role="img" aria-label="Toy">
+              👾
+            </span>
           </FooterSubText>
           <Form>
-            <FormInput name="email" type="email" placeholder="Message" />
-            <Button fontBig>Say hi</Button>
+            <FormInput
+              name="email"
+              type="text"
+              placeholder="Message"
+              value={message.message}
+              onChange={(e) => setMessage({ message: e.target.value })}
+            />
+
+            <Button fontBig onClick={sendEmail}>
+              Say hi
+            </Button>
           </Form>
         </FooterSubscription>
         <FooterLinksContainer>
@@ -132,15 +155,27 @@ const Footer = () => {
               emilio.dev
             </SocialLogo>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <SocialIconLink
+                href="https://www.facebook.com/emilio.quintana.50/"
+                target="_blank"
+                aria-label="Facebook"
+              >
                 <FaFacebook />
               </SocialIconLink>
 
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <SocialIconLink
+                href="https://www.instagram.com/equintanalopez/"
+                target="_blank"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
               </SocialIconLink>
 
-              <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
+              <SocialIconLink
+                href="http://www.linkedin.com/in/emilio-quintana-dev"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
                 <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>

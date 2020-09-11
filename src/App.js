@@ -2,9 +2,8 @@ import React from "react";
 import { Navbar, Footer } from "./components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import GlobalStyle from "./globalStyles";
-import Home from "./pages/HomePage/Home";
+import Home from "./pages/Home/Home";
 import Projects from "./pages/Projects/Projects";
-import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
 import ScrollToTop from "./components/ScrollToTop";
 function App() {

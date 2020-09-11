@@ -1,7 +1,5 @@
 import React from "react";
 import { Button } from "../../globalStyles";
-import { AiOutlineClockCircle } from "react-icons/ai";
-import { GrUserWorker } from "react-icons/gr";
 import { IconContext } from "react-icons/lib";
 import { VscDebugDisconnect, VscNote } from "react-icons/vsc";
 import { SiArduino } from "react-icons/si";
@@ -79,13 +77,12 @@ function Projects() {
                   <ProjectCardFeature>
                     Made using Electron, React and Material UI.
                   </ProjectCardFeature>
-                  <ProjectCardFeature></ProjectCardFeature>
                 </ProjectCardFeatures>
 
                 <ActionWrapper>
                   <ProjectLink
                     primary
-                    href="https://www.loom.com/share/0782c7ff097e49c3ab2d8b0e3e2b8817"
+                    href="https://www.loom.com/share/264162506394494995a22879cce0ac30"
                     target="_blank"
                     style={{ marginBottom: 10 }}
                   >
@@ -94,7 +91,7 @@ function Projects() {
 
                   <ProjectLink
                     primary
-                    href="https://github.com/emilio-quintana-dev/servitodo-client"
+                    href="https://github.com/emilio-quintana-dev/CerealVis"
                     target="_blank"
                   >
                     Github
@@ -122,7 +119,7 @@ function Projects() {
                 <ActionWrapper>
                   <ProjectLink
                     primary
-                    href="https://www.loom.com/share/0782c7ff097e49c3ab2d8b0e3e2b8817"
+                    href="https://www.loom.com/share/c75e72bc0d2848f7b897999599a7baf3"
                     target="_blank"
                     style={{ marginBottom: 10 }}
                   >
@@ -131,7 +128,7 @@ function Projects() {
 
                   <ProjectLink
                     primary
-                    href="https://github.com/emilio-quintana-dev/servitodo-client"
+                    href="https://github.com/emilio-quintana-dev/notes-react-app"
                     target="_blank"
                   >
                     Github
