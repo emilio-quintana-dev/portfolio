@@ -55,7 +55,11 @@ function Projects() {
                     Watch demo
                   </ProjectLink>
 
-                  <ProjectLink href="https://github.com/emilio-quintana-dev/servitodo-client">
+                  <ProjectLink
+                    primary
+                    href="https://github.com/emilio-quintana-dev/servitodo-client"
+                    target="_blank"
+                  >
                     Github
                   </ProjectLink>
                 </ActionWrapper>
@@ -88,7 +92,11 @@ function Projects() {
                     Watch demo
                   </ProjectLink>
 
-                  <ProjectLink href="https://github.com/emilio-quintana-dev/servitodo-client">
+                  <ProjectLink
+                    primary
+                    href="https://github.com/emilio-quintana-dev/servitodo-client"
+                    target="_blank"
+                  >
                     Github
                   </ProjectLink>
                 </ActionWrapper>
@@ -121,7 +129,11 @@ function Projects() {
                     Watch demo
                   </ProjectLink>
 
-                  <ProjectLink href="https://github.com/emilio-quintana-dev/servitodo-client">
+                  <ProjectLink
+                    primary
+                    href="https://github.com/emilio-quintana-dev/servitodo-client"
+                    target="_blank"
+                  >
                     Github
                   </ProjectLink>
                 </ActionWrapper>

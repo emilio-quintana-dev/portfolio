@@ -53,23 +53,30 @@ const Navbar = () => {
               <NavItem>
                 <NavLinks to="/">Home</NavLinks>
               </NavItem>
+
+              <NavItem>
+                <NavLinks to="/about">About</NavLinks>
+              </NavItem>
+
               <NavItem>
                 <NavLinks to="/projects">Projects</NavLinks>
               </NavItem>
-              <NavItem>
-                <NavLinks to="/contact">Contact me</NavLinks>
-              </NavItem>
-              <NavItemBtn>
+
+              {/* <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/sign-up">
-                    <Button primary>Read my blog</Button>
+                  <NavBtnLink to="/blog">
+                    <Button primary fontBig>
+                      Dev Blog
+                    </Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/sign-up">
-                    <Button primary>Read my blog</Button>
+                  <NavBtnLink to="/blog">
+                    <Button primary fontBig>
+                      Dev Blog
+                    </Button>
                   </NavBtnLink>
                 )}
-              </NavItemBtn>
+              </NavItemBtn> */}
             </NavMenu>
           </NavBarContainer>
         </Nav>

@@ -28,7 +28,9 @@ const Footer = () => {
       <FooterContainer>
         <FooterSubscription>
           <FooterSubHeading>Feel free to reach out!</FooterSubHeading>
-          <FooterSubText>I'll be happy to talk</FooterSubText>
+          <FooterSubText>
+            I'll be happy to talk <span>👾</span>
+          </FooterSubText>
           <Form>
             <FormInput name="email" type="email" placeholder="Message" />
             <Button fontBig>Say hi</Button>

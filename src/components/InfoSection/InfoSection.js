@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Button } from "../../globalStyles";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import {
   InfoSec,

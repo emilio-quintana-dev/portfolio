@@ -1,13 +1,13 @@
 import React from "react";
 import { InfoSection } from "../../components";
-import { homeObjTwo } from "./Data";
+import { homeObjThree } from "./Data";
 
-function Contact() {
+function About() {
   return (
     <>
-      <InfoSection {...homeObjTwo} />
+      <InfoSection {...homeObjThree} />
     </>
   );
 }
 
-export default Contact;
+export default About;
