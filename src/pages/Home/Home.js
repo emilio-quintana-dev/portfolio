@@ -1,13 +1,13 @@
 import React from "react";
-import { InfoSection, Projects } from "../../components";
-import { homeObjOne, homeObjTwo } from "./Data";
+import { InfoSection, ProjectsSection } from "../../components";
+import { intro, aboutMe, projects } from "../Data";
 
 function Home() {
   return (
     <>
-      <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjTwo} />
-      <Projects />
+      <InfoSection {...intro} />
+      <InfoSection {...aboutMe} />
+      <ProjectsSection {...projects} />
     </>
   );
 }

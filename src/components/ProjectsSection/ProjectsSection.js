@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../../globalStyles";
 import { IconContext } from "react-icons/lib";
 import { VscDebugDisconnect, VscNote } from "react-icons/vsc";
 import { SiArduino } from "react-icons/si";
@@ -17,9 +16,25 @@ import {
   ProjectCardFeature,
   ActionWrapper,
   ProjectLink,
-} from "./Projects.elements";
+} from "./ProjectsSection.elements";
 
-function Projects() {
+const Projects = ({
+  projectOneName,
+  projectOneDescription,
+  projectOneStack,
+  projectOneLoom,
+  projectOneGithub,
+  projectTwoName,
+  projectTwoDescription,
+  projectTwoStack,
+  projectTwoLoom,
+  projectTwoGithub,
+  projectThreeName,
+  projectThreeDescription,
+  projectThreeStack,
+  projectThreeLoom,
+  projectThreeGithub,
+}) => {
   return (
     <IconContext.Provider value={{ color: "#a9b3c1", size: 64 }}>
       <ProjectSection>
@@ -31,69 +46,57 @@ function Projects() {
                 <ProjectCardIcon>
                   <VscDebugDisconnect />
                 </ProjectCardIcon>
-                <ProjectCardPlan>Servitodo</ProjectCardPlan>
+                <ProjectCardPlan>{projectOneName}</ProjectCardPlan>
                 <ProjectCardFeatures>
                   <ProjectCardFeature>
-                    Web app made to connect professionals with potential
-                    customers.
+                    {projectOneDescription}
                   </ProjectCardFeature>
-                  <ProjectCardFeature>
-                    Made using React, Redux, JWT, a Rails API and a Postgre db.
-                  </ProjectCardFeature>
+                  <ProjectCardFeature>{projectOneStack}</ProjectCardFeature>
                   <ProjectCardFeature></ProjectCardFeature>
                 </ProjectCardFeatures>
 
                 <ActionWrapper>
                   <ProjectLink
                     primary
-                    href="https://www.loom.com/share/0782c7ff097e49c3ab2d8b0e3e2b8817"
+                    href={projectOneLoom}
                     target="_blank"
                     style={{ marginBottom: 10 }}
                   >
                     Watch demo
                   </ProjectLink>
 
-                  <ProjectLink
-                    primary
-                    href="https://github.com/emilio-quintana-dev/servitodo-client"
-                    target="_blank"
-                  >
+                  <ProjectLink primary href={projectOneGithub} target="_blank">
                     Github
                   </ProjectLink>
                 </ActionWrapper>
               </ProjectCardInfo>
             </ProjectCard>
+
             <ProjectCard>
               <ProjectCardInfo>
                 <ProjectCardIcon>
                   <SiArduino />
                 </ProjectCardIcon>
-                <ProjectCardPlan>CerealVis</ProjectCardPlan>
+                <ProjectCardPlan>{projectTwoName}</ProjectCardPlan>
                 <ProjectCardFeatures>
                   <ProjectCardFeature>
-                    Electron desktop app made to visualize serial data coming
-                    from a port.
+                    {projectTwoDescription}
                   </ProjectCardFeature>
-                  <ProjectCardFeature>
-                    Made using Electron, React and Material UI.
-                  </ProjectCardFeature>
+                  <ProjectCardFeature>{projectTwoStack}</ProjectCardFeature>
+                  <ProjectCardFeature></ProjectCardFeature>
                 </ProjectCardFeatures>
 
                 <ActionWrapper>
                   <ProjectLink
                     primary
-                    href="https://www.loom.com/share/264162506394494995a22879cce0ac30"
+                    href={projectTwoLoom}
                     target="_blank"
                     style={{ marginBottom: 10 }}
                   >
                     Watch demo
                   </ProjectLink>
 
-                  <ProjectLink
-                    primary
-                    href="https://github.com/emilio-quintana-dev/CerealVis"
-                    target="_blank"
-                  >
+                  <ProjectLink primary href={projectTwoGithub} target="_blank">
                     Github
                   </ProjectLink>
                 </ActionWrapper>
@@ -104,22 +107,19 @@ function Projects() {
                 <ProjectCardIcon>
                   <VscNote />
                 </ProjectCardIcon>
-                <ProjectCardPlan>Evernot</ProjectCardPlan>
+                <ProjectCardPlan>{projectThreeName}</ProjectCardPlan>
                 <ProjectCardFeatures>
                   <ProjectCardFeature>
-                    Web app with user authentication made to save notes and
-                    reminders.
+                    {projectThreeDescription}
                   </ProjectCardFeature>
-                  <ProjectCardFeature>
-                    Made using React, a Rails API and a SQlite3 db.
-                  </ProjectCardFeature>
+                  <ProjectCardFeature>{projectThreeStack}</ProjectCardFeature>
                   <ProjectCardFeature></ProjectCardFeature>
                 </ProjectCardFeatures>
 
                 <ActionWrapper>
                   <ProjectLink
                     primary
-                    href="https://www.loom.com/share/c75e72bc0d2848f7b897999599a7baf3"
+                    href={projectThreeLoom}
                     target="_blank"
                     style={{ marginBottom: 10 }}
                   >
@@ -128,7 +128,7 @@ function Projects() {
 
                   <ProjectLink
                     primary
-                    href="https://github.com/emilio-quintana-dev/notes-react-app"
+                    href={projectThreeGithub}
                     target="_blank"
                   >
                     Github
@@ -141,5 +141,6 @@ function Projects() {
       </ProjectSection>
     </IconContext.Provider>
   );
-}
+};
+
 export default Projects;

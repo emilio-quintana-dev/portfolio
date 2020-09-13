@@ -1,9 +1,11 @@
 import React from "react";
-import { Projects as ProjectsPage } from "../../components";
+import { ProjectsSection } from "../../components";
+import { projects } from "../Data";
+
 function Projects() {
   return (
     <>
-      <ProjectsPage />
+      <ProjectsSection {...projects} />
     </>
   );
 }

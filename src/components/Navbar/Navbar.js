@@ -62,21 +62,27 @@ const Navbar = () => {
                 <NavLinks to="/projects">Projects</NavLinks>
               </NavItem>
 
-              {/* <NavItemBtn>
+              <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/blog">
+                  <NavBtnLink
+                    href="https://medium.com/@emilioquintana90"
+                    target="_blank"
+                  >
                     <Button primary fontBig>
                       Dev Blog
                     </Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/blog">
-                    <Button primary fontBig>
+                  <NavBtnLink
+                    href="https://medium.com/@emilioquintana90"
+                    target="_blank"
+                  >
+                    <Button onClick={closeMobileMenu} fontBig primary>
                       Dev Blog
                     </Button>
                   </NavBtnLink>
                 )}
-              </NavItemBtn> */}
+              </NavItemBtn>
             </NavMenu>
           </NavBarContainer>
         </Nav>

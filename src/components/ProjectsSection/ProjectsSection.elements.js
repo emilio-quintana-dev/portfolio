@@ -48,7 +48,7 @@ export const ProjectCard = styled.div`
   text-decoration: none;
   border-radius: 4px;
   &:nth-child(2) {
-    margin: 24px;
+    margin: 10px;
   }
   &:hover {
     transform: scale(1.06);
