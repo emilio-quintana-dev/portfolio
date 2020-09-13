@@ -12,7 +12,6 @@ import {
   NavBtnLink,
 } from "./Navbar.elements";
 import { FaBars, FaTimes } from "react-icons/fa";
-
 import { IconContext } from "react-icons/lib";
 import { Button } from "../../globalStyles";
 
