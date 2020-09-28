@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Container } from "../../globalStyles";
 import { SiReactos } from "react-icons/si";
 
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
   background: #101522;

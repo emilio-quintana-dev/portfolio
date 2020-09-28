@@ -5,9 +5,9 @@ export const intro = {
   lightTopLine: true,
   lightTextDesc: true,
   topLine: "B.S Computer Systems, Flatiron School Almuni",
-  headline: "Hi I'm Emilio and I'm a Web developer.",
+  headline: "Hi I'm Emilio and I'm a Software Developer.",
   description:
-    "I enjoy building responsive web applications and learning new technologies. My day-to-day stack includes: React, Redux, Rails and Postgres. Currently learning: MongoDB and Node.js",
+    "I enjoy building responsive web applications and learning new technologies. My day-to-day stack includes: React, Redux, Rails and PostgreSQL.",
   buttonLabel: "See my projects",
   lightText: true,
   img: require("../images/svg-1.svg"),
@@ -22,7 +22,7 @@ export const aboutMe = {
   imgStart: "start",
   lightTopLine: false,
   lightTextDesc: false,
-  buttonLabel: "Download my CV",
+  buttonLabel: "Download my Resume",
   description:
     "I started my first business right out of high school and fell in love with coding while building the website for my store. Strong analytic background with a Bachelor’s in Computer Information Systems and experience as a Data Analyst in a SAS startup.",
   headline: "Engineer by education, entrepreneur in spirit. ",

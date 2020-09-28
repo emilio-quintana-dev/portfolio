@@ -14,6 +14,7 @@ import {
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { Button } from "../../globalStyles";
+import * as Scroll from "react-scroll";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -50,15 +51,39 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/">Home</NavLinks>
+                <NavLinks
+                  to="intro"
+                  offset={-100}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Home
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/about">About</NavLinks>
+                <NavLinks
+                  to="about"
+                  offset={-100}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  About
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/projects">Projects</NavLinks>
+                <NavLinks
+                  to="projects"
+                  spy={true}
+                  offset={-80}
+                  smooth={true}
+                  duration={500}
+                >
+                  Projects
+                </NavLinks>
               </NavItem>
 
               <NavItemBtn>

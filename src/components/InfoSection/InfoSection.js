@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Button } from "../../globalStyles";
 import { Link } from "react-router-dom";
+import { Link as ScLink } from "react-scroll";
 
 import {
   InfoSec,
@@ -49,11 +50,17 @@ const InfoSection = ({
                     </Button>{" "}
                   </Link>
                 ) : (
-                  <Link to="/projects">
+                  <ScLink
+                    to="projects"
+                    offset={-80}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
                     <Button big fontBig primary={primary}>
                       {buttonLabel}
                     </Button>{" "}
-                  </Link>
+                  </ScLink>
                 )}
               </TextWrapper>
             </InfoColumn>
