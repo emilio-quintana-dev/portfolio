@@ -32,33 +32,54 @@ export const FooterSubText = styled.p`
   font-size: 20px;
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media screen and (max-width: 820px) {
-    flex-direction: column;
-    width: 80%;
-  }
+  flex-direction: column;
+  width: 100%;
+  min-width: 800px;
 `;
 
 export const FormInput = styled.input`
   padding: 10px 20px;
   border-radius: 2px;
-  margin-right: 10px;
+  margin-bottom: 20px;
   outline: none;
   border: none;
   font-size: 16px;
   border: 1px solid #fff;
+  width: 50%;
 
   &::placeholder {
     color: #242424;
   }
 
   @media screen and (max-width: 820px) {
-    width: 100%;
+    width: 75%;
     margin: 0 0 16px 0;
+  }
+`;
+
+export const SubmitButton = styled.button`
+  border-radius: 4px;
+  background: ${({ primary }) => (primary ? "#4B59F7" : "#0467FB")};
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
+  color: #fff;
+  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+
+  &:hover {
+    transition: all 0.3s ease-out;
+    color: #fff;
+    background: ${({ primary }) => (primary ? "#0467FB" : "#4B59F7")};
+  }
+  @media screen and (max-width: 960px) {
+    width: 75%;
   }
 `;
 
@@ -161,4 +182,10 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+`;
+
+export const InputLabel = styled.label`
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 5px;
 `;

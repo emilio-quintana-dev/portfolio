@@ -124,7 +124,7 @@ export const NavBtnLink = styled.a`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 4px 14px;
   height: 100%;
   width: 100%;
   border: none;

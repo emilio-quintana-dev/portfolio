@@ -5,7 +5,7 @@ export const ProjectSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #4b59f7;
+  background: #101522;
 `;
 
 export const ProjectWrapper = styled.div`
@@ -105,9 +105,15 @@ export const ProjectCardFeature = styled.li`
   text-align: center;
 `;
 
-export const ActionWrapper = styled.div`
+export const IconsWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+`;
+
+export const Icon = styled.span`
+  display: flex;
+  max-width: 25px;
+  margin-right: 5px;
 `;
 
 export const ProjectLink = styled.a`

@@ -92,9 +92,7 @@ const Navbar = () => {
                     href="https://medium.com/@emilioquintana90"
                     target="_blank"
                   >
-                    <Button primary fontBig>
-                      Dev Blog
-                    </Button>
+                    <Button primary>Dev Blog</Button>
                   </NavBtnLink>
                 ) : (
                   <NavBtnLink

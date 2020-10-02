@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InfoSec = styled.div`
   color: #fff;
   padding: 75px 0;
-  background: ${({ lightBg }) => (lightBg ? "#fff" : "#101522")};
+  background: #101522;
 `;
 
 export const InfoRow = styled.div`
@@ -11,7 +11,7 @@ export const InfoRow = styled.div`
   margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
   align-items: center;
-  flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
+  flex-direction: row-start;
 `;
 
 export const InfoColumn = styled.div`
@@ -41,7 +41,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#a9b3c1" : "#4B59F7")};
+  color: #a9b3c1;
   font-size: 18px;
   line-height: 16px;
   letter-spacing: 1.4px;
@@ -50,24 +50,24 @@ export const TopLine = styled.div`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 50px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#1c2237")};
+  color: #f7f8fa;
 `;
 
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 28px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#a9b3c1" : "#1c2237")};
+  color: #a9b3c1;
 `;
 
 export const ImgWrapper = styled.div`
   max-width: 555px;
   display: flex;
-  justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
+  justify-content: flex-end;
 `;
 
 export const Img = styled.img`

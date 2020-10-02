@@ -5,9 +5,10 @@ import {
   FooterContainer,
   FooterSubscription,
   FooterSubHeading,
-  FooterSubText,
   Form,
   FormInput,
+  SubmitButton,
+  InputLabel,
   FooterLinksWrapper,
   FooterLinksContainer,
   FooterLinkItems,
@@ -20,43 +21,61 @@ import {
   SocialIcons,
   SocialIconLink,
 } from "./Footer.elements";
-import { Button } from "../../globalStyles";
 
 const Footer = () => {
-  const [message, setMessage] = useState({ message: "" });
+  const [message, setMessage] = useState({
+    name: "",
+    email: "",
+    text: "",
+  });
 
   var service_id = "default_service";
   var template_id = "contact_form";
   var user_id = "user_0s0p6hVDhQaHTDwYYA0vo";
 
-  const sendEmail = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
     emailjs.send(service_id, template_id, message, user_id);
-    setMessage({ message: "I will be in touch!" });
+    setMessage({
+      name: "",
+      email: "",
+      text: "I will be in touch soon!",
+    });
   };
 
   return (
     <>
       <FooterContainer>
         <FooterSubscription>
-          <FooterSubHeading>Feel free to reach out!</FooterSubHeading>
-          <FooterSubText>
-            I'll be happy to talk{" "}
-            <span role="img" aria-label="Toy">
-              👾
-            </span>
-          </FooterSubText>
-          <Form>
+          <FooterSubHeading>Contact Me</FooterSubHeading>
+          <Form onSubmit={sendEmail}>
             <FormInput
-              name="email"
+              name="name"
               type="text"
-              placeholder="Message"
-              value={message.message}
-              onChange={(e) => setMessage({ message: e.target.value })}
+              placeholder="Name"
+              value={message.name}
+              onChange={(e) => setMessage({ ...message, name: e.target.value })}
             />
 
-            <Button fontBig onClick={sendEmail}>
-              Say hi
-            </Button>
+            <FormInput
+              name="email"
+              type="email"
+              placeholder="Email"
+              value={message.email}
+              onChange={(e) =>
+                setMessage({ ...message, email: e.target.value })
+              }
+            />
+
+            <FormInput
+              name="text"
+              type="text"
+              placeholder="Message"
+              value={message.text}
+              onChange={(e) => setMessage({ ...message, text: e.target.value })}
+            />
+
+            <SubmitButton fontBig>Send</SubmitButton>
           </Form>
         </FooterSubscription>
         <FooterLinksContainer>

@@ -1,37 +1,21 @@
-export const intro = {
-  primary: true,
-  lightBg: false,
-  imgStart: "",
-  lightTopLine: true,
-  lightTextDesc: true,
+export const IntroData = {
   topLine: "B.S Computer Systems, Flatiron School Almuni",
   headline: "Hi I'm Emilio and I'm a Software Developer.",
   description:
-    "I enjoy building responsive web applications and learning new technologies. My day-to-day stack includes: React, Redux, Rails and PostgreSQL.",
-  buttonLabel: "See my projects",
-  lightText: true,
+    "I enjoy building web applications and using technology to make an impact.",
+  buttonLabel: "See my Github",
   img: require("../images/svg-1.svg"),
   alt: "Image",
-  start: "",
-  isAboutMe: false,
 };
 
-export const aboutMe = {
-  primary: false,
-  lightBg: true,
-  imgStart: "start",
-  lightTopLine: false,
-  lightTextDesc: false,
+export const AboutData = {
   buttonLabel: "Download my Resume",
   description:
     "I started my first business right out of high school and fell in love with coding while building the website for my store. Strong analytic background with a Bachelor’s in Computer Information Systems and experience as a Data Analyst in a SAS startup.",
   headline: "Engineer by education, entrepreneur in spirit. ",
-  lightText: false,
   topLine: "About me",
   img: require("../images/svg-2.svg"),
   alt: "Image",
-  start: "true",
-  isAboutMe: true,
 };
 
 export const projects = {
