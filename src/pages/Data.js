@@ -1,10 +1,12 @@
+const num = Math.floor(Math.random() * Math.floor(5));
+
 export const IntroData = {
-  topLine: "B.S Computer Systems, Flatiron School Almuni",
+  topLine: "Biohacking / Web Dev / AI / UI-UX",
   headline: "Hi I'm Emilio and I'm a Software Developer.",
   description:
     "I enjoy building web applications and using technology to make an impact.",
   buttonLabel: "See my Github",
-  img: require("../images/svg-1.svg"),
+  img: require(`../images/svg-${num}.svg`),
   alt: "Image",
 };
 
@@ -14,7 +16,7 @@ export const AboutData = {
     "I started my first business right out of high school and fell in love with coding while building the website for my store. Strong analytic background with a Bachelor’s in Computer Information Systems and experience as a Data Analyst in a SAS startup.",
   headline: "Engineer by education, entrepreneur in spirit. ",
   topLine: "About me",
-  img: require("../images/svg-2.svg"),
+  img: require("../images/about-me.svg"),
   alt: "Image",
 };
 

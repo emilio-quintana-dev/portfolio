@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../utils/color";
 
 export const ProjectSection = styled.div`
   padding: 100px 0 160px;
@@ -13,42 +14,38 @@ export const ProjectWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  @media screen and (max-width: 960px) {
-    margin: 0 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 `;
 
 export const ProjectHeading = styled.h1`
-  color: #fff;
+  color: ${colors.heading};
   font-size: 48px;
   margin-bottom: 24px;
 `;
 
 export const ProjectContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 960px) {
+  width: 100%;
+  @media screen and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
 `;
 
 export const ProjectCard = styled.div`
   background: #242424;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
-  width: 280px;
-  height: 500px;
+  width: 250px;
+  min-height: 300px;
+  padding: 10px 20px;
   text-decoration: none;
   border-radius: 4px;
   &:nth-child(2) {
-    margin: 10px;
+    margin: 24px;
   }
   &:hover {
     transform: scale(1.06);
@@ -66,59 +63,46 @@ export const ProjectCard = styled.div`
 export const ProjectCardInfo = styled.div`
   display: flex;
   flex-direction: column;
-  height: 500px;
-  padding: 24px;
+  padding: 15px;
   align-items: center;
-  color: #fff;
 `;
 
-export const ProjectCardIcon = styled.div`
-  margin: 24px 0;
-`;
-
-export const ProjectCardPlan = styled.h3`
-  margin-bottom: 5px;
+export const ProjectTitle = styled.h3`
   font-size: 24px;
+  color: ${colors.heading};
 `;
 
-export const ProjectCardCost = styled.h4`
-  font-size: 40px;
-`;
+export const ProjectLink = styled.a``;
 
-export const ProjectCardLength = styled.p`
-  font-size: 14px;
-  margin-bottom: 24px;
-`;
-
-export const ProjectCardFeatures = styled.ul`
-  margin: 16px 0 32px;
-  list-style: none;
+export const DescriptionWrapper = styled.div`
+  margin: 16px 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  color: #a9b3c1;
 `;
 
-export const ProjectCardFeature = styled.li`
-  margin-bottom: 10px;
+export const Description = styled.p`
   text-align: center;
+  color: ${colors.text};
 `;
 
 export const IconsWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
 `;
 
 export const Icon = styled.span`
+  color: ${colors.text};
+  font-size: 1.5rem;
   display: flex;
   max-width: 25px;
-  margin-right: 5px;
+  margin-right: 10px;
 `;
 
-export const ProjectLink = styled.a`
+export const Button = styled.button`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? "#4B59F7" : "#0467FB")};
+  background: ${({ primary }) => (primary ? "#4B59F7" : "#32CD32")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
   color: #fff;
@@ -126,13 +110,13 @@ export const ProjectLink = styled.a`
   outline: none;
   border: none;
   cursor: pointer;
-  text-decoration: none;
-  text-align: center;
+  margin: 5px;
+  min-width: 200px;
 
   &:hover {
     transition: all 0.3s ease-out;
     color: #fff;
-    background: ${({ primary }) => (primary ? "#0467FB" : "#4B59F7")};
+    background: ${({ primary }) => (primary ? "#0467FB" : "#7CFC00")};
   }
   @media screen and (max-width: 960px) {
     width: 100%;

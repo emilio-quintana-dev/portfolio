@@ -1,12 +1,13 @@
 import styled from "styled-components";
+import { colors } from "../../utils/color";
 
-export const InfoSec = styled.div`
-  color: #fff;
+export const AboutSection = styled.div`
+  color: ${colors.heading};
   padding: 75px 0;
-  background: #fff;
+  background: ${colors.background};
 `;
 
-export const InfoRow = styled.div`
+export const Row = styled.div`
   display: flex;
   margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
@@ -14,7 +15,7 @@ export const InfoRow = styled.div`
   flex-direction: row-reverse;
 `;
 
-export const InfoColumn = styled.div`
+export const Column = styled.div`
   margin-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
@@ -41,7 +42,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: #4b59f7;
+  color: ${colors.topLine};
   font-size: 18px;
   line-height: 16px;
   letter-spacing: 1.4px;
@@ -53,15 +54,14 @@ export const Heading = styled.h1`
   font-size: 50px;
   line-height: 1.1;
   font-weight: 600;
-  color: #1c2237;
 `;
 
-export const Subtitle = styled.p`
+export const Text = styled.p`
+  color: ${colors.text};
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 20px;
   line-height: 28px;
-  color: #1c2237;
 `;
 
 export const ImgWrapper = styled.div`

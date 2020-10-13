@@ -1,27 +1,18 @@
 import React from "react";
-import { IconContext } from "react-icons/lib";
 import { SiRails } from "react-icons/si";
+import { SiRedux, SiMaterialUi, SiMongodb, SiElectron } from "react-icons/si";
+import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
-  SiArduino,
-  SiRedux,
-  SiMaterialUi,
-  SiMongodb,
-  SiElectron,
-} from "react-icons/si";
-import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
-import { ParallaxDepthCard } from "experiment-parallax-depth-card";
-import "experiment-parallax-depth-card/dist/index.css";
-import {
+  Button,
+  ProjectTitle,
+  DescriptionWrapper,
+  Description,
   ProjectSection,
   ProjectWrapper,
   ProjectHeading,
   ProjectContainer,
   ProjectCard,
   ProjectCardInfo,
-  ProjectCardIcon,
-  ProjectCardPlan,
-  ProjectCardFeatures,
-  ProjectCardFeature,
   IconsWrapper,
   ProjectLink,
   Icon,
@@ -29,182 +20,127 @@ import {
 
 const Projects = () => {
   return (
-    <IconContext.Provider value={{ color: "#a9b3c1", size: 64 }}>
-      <ProjectSection>
-        <ProjectWrapper>
-          <ProjectHeading>My Projects</ProjectHeading>
-          <ProjectContainer>
-            <a
-              href="https://github.com/emilio-quintana-dev/servitodo-client"
-              target="_blank"
-            >
-              <ParallaxDepthCard title="Servitodo">
-                <p>
-                  Web app made to help connect professionals with potential
-                  customers.
-                </p>
-                <p>Click to see repo</p>
-                <IconsWrapper>
-                  <Icon>
-                    <FaReact />
-                  </Icon>
-                  <Icon>
-                    <FaHtml5 />
-                  </Icon>
-                  <Icon>
-                    <FaCss3Alt />
-                  </Icon>
-                  <Icon>
-                    <SiRails />
-                  </Icon>
-                  <Icon>
-                    <SiRedux />
-                  </Icon>
-                  <Icon>
-                    <SiMaterialUi />
-                  </Icon>
-                </IconsWrapper>
-              </ParallaxDepthCard>
-            </a>
+    <ProjectSection>
+      <ProjectWrapper>
+        <ProjectHeading>My Projects</ProjectHeading>
+        <ProjectContainer>
+          <ProjectCard>
+            <ProjectCardInfo>
+              <ProjectTitle>Cerealvis</ProjectTitle>
 
-            <a
-              href="https://github.com/emilio-quintana-dev/CerealVis"
-              target="_blank"
-            >
-              <ParallaxDepthCard title="CerealVis">
-                <p>
-                  Electron app made to visualize serial data coming from a port.
-                </p>
-                <p>Click to see repo</p>
-                <IconsWrapper>
-                  <Icon>
-                    <FaReact />
-                  </Icon>
-                  <Icon>
-                    <FaHtml5 />
-                  </Icon>
-                  <Icon>
-                    <FaCss3Alt />
-                  </Icon>
-                  <Icon>
-                    <SiElectron />
-                  </Icon>
-                  <Icon>
-                    <SiArduino />
-                  </Icon>
-                </IconsWrapper>
-              </ParallaxDepthCard>
-            </a>
+              <DescriptionWrapper>
+                <Description>
+                  Electron app made to read sensor data from serial port.
+                </Description>
+              </DescriptionWrapper>
+              <ProjectLink
+                href="https://github.com/emilio-quintana-dev/CerealVis"
+                target="_blank"
+              >
+                <Button primary>Github</Button>
+              </ProjectLink>
 
-            <a
-              href="https://github.com/emilio-quintana-dev/task-io-client-v1"
-              target="_blank"
-            >
-              <ParallaxDepthCard title="Tasks.io">
-                <p>
-                  Prodoctivity tool with User authentication made to keep track
-                  of to-dos.
-                </p>
-                <p>Click to see repo</p>
-                <IconsWrapper>
-                  <Icon>
-                    <FaReact />
-                  </Icon>
-                  <Icon>
-                    <FaHtml5 />
-                  </Icon>
-                  <Icon>
-                    <FaCss3Alt />
-                  </Icon>
-                  <Icon>
-                    <SiMongodb />
-                  </Icon>
-                  <Icon>
-                    <FaNodeJs />
-                  </Icon>
-                </IconsWrapper>
-              </ParallaxDepthCard>
-            </a>
-          </ProjectContainer>
+              <ProjectLink
+                href="https://www.loom.com/share/0782c7ff097e49c3ab2d8b0e3e2b8817"
+                target="_blank"
+              >
+                <Button primary>Watch demo</Button>
+              </ProjectLink>
 
-          <ProjectContainer>
-            <a
-              href="https://github.com/emilio-quintana-dev/evernot-client-v1"
-              target="_blank"
-            >
-              <ParallaxDepthCard title="Evernot">
-                <p>
-                  Prodoctivity tool with User authentication made to keep track
-                  of notes & reminders.
-                </p>
-                <p>Click to see repo</p>
-                <IconsWrapper>
-                  <Icon>
-                    <FaReact />
-                  </Icon>
-                  <Icon>
-                    <FaHtml5 />
-                  </Icon>
-                  <Icon>
-                    <FaCss3Alt />
-                  </Icon>
-                  <Icon>
-                    <SiMongodb />
-                  </Icon>
-                  <Icon>
-                    <FaNodeJs />
-                  </Icon>
-                </IconsWrapper>
-              </ParallaxDepthCard>
-            </a>
+              <IconsWrapper>
+                <Icon>
+                  <FaReact />
+                </Icon>
+                <Icon>
+                  <FaNodeJs />
+                </Icon>
+                <Icon>
+                  <SiElectron />
+                </Icon>
+                <Icon>
+                  <SiMaterialUi />
+                </Icon>
+              </IconsWrapper>
+            </ProjectCardInfo>
+          </ProjectCard>
 
-            <a
-              href="https://github.com/emilio-quintana-dev/emilio-dev-v2"
-              target="_blank"
-            >
-              <ParallaxDepthCard title="Emilio.dev">
-                <p>
-                  Fully-responsive and made out of reusable styled components.
-                </p>
-                <p>Click to see repo</p>
-                <IconsWrapper>
-                  <Icon>
-                    <FaReact />
-                  </Icon>
-                  <Icon>
-                    <FaHtml5 />
-                  </Icon>
-                  <Icon>
-                    <FaCss3Alt />
-                  </Icon>
-                </IconsWrapper>
-              </ParallaxDepthCard>
-            </a>
+          <ProjectCard>
+            <ProjectCardInfo>
+              <ProjectTitle>Servitodo</ProjectTitle>
+              <DescriptionWrapper>
+                <Description>
+                  App made to connect customers with local professionals.
+                </Description>
+              </DescriptionWrapper>
+              <ProjectLink
+                href="https://github.com/emilio-quintana-dev/servitodo-client-v1"
+                target="_blank"
+              >
+                <Button primary>Github</Button>
+              </ProjectLink>
+              <ProjectLink
+                href="https://www.loom.com/share/264162506394494995a22879cce0ac30"
+                target="_blank"
+              >
+                <Button primary>Watch demo</Button>
+              </ProjectLink>
+              <IconsWrapper>
+                <Icon>
+                  <FaReact />
+                </Icon>
+                <Icon>
+                  <SiRedux />
+                </Icon>
+                <Icon>
+                  <SiRails />
+                </Icon>
+                <Icon>
+                  <SiMaterialUi />
+                </Icon>
+              </IconsWrapper>
+            </ProjectCardInfo>
+          </ProjectCard>
 
-            <a
-              href="https://github.com/emilio-quintana-dev/pomoclock-client-v1"
-              target="_blank"
-            >
-              <ParallaxDepthCard title="Pomoclock">
-                <p>Prodoctivity tool made to perform the pomodoro technique.</p>
-                <p>Click to see repo</p>
-                <IconsWrapper>
-                  <Icon>
-                    <FaReact />
-                  </Icon>
-                  <Icon>
-                    <FaHtml5 />
-                  </Icon>
-                  <Icon>
-                    <FaCss3Alt />
-                  </Icon>
-                </IconsWrapper>
-              </ParallaxDepthCard>
-            </a>
-          </ProjectContainer>
-        </ProjectWrapper>
-      </ProjectSection>
-    </IconContext.Provider>
+          <ProjectCard>
+            <ProjectCardInfo>
+              <ProjectTitle>Task.io</ProjectTitle>
+              <DescriptionWrapper>
+                <Description>
+                  App with user authentication made to save reminders.
+                </Description>
+              </DescriptionWrapper>
+              <ProjectLink
+                href="https://github.com/emilio-quintana-dev/task-io-client-v1"
+                target="_blank"
+              >
+                <Button primary>Github</Button>
+              </ProjectLink>
+
+              <ProjectLink
+                href="https://distracted-wing-b65893.netlify.app/"
+                target="_blank"
+              >
+                <Button>Test</Button>
+              </ProjectLink>
+              <IconsWrapper>
+                <Icon>
+                  <FaReact />
+                </Icon>
+                <Icon>
+                  <FaNodeJs />
+                </Icon>
+                <Icon>
+                  <SiMongodb />
+                </Icon>
+                <Icon>
+                  <SiRails />
+                </Icon>
+              </IconsWrapper>
+            </ProjectCardInfo>
+          </ProjectCard>
+        </ProjectContainer>
+      </ProjectWrapper>
+    </ProjectSection>
   );
 };
 

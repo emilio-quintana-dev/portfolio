@@ -44,8 +44,8 @@ const Navbar = () => {
           <NavBarContainer>
             <NavLogo to="/" onClick={closeMobileMenu}>
               <NavIcon />
-              emilio.dev
             </NavLogo>
+
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
@@ -57,20 +57,9 @@ const Navbar = () => {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  onClick={closeMobileMenu}
                 >
                   Home
-                </NavLinks>
-              </NavItem>
-
-              <NavItem>
-                <NavLinks
-                  to="about"
-                  offset={-100}
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  About
                 </NavLinks>
               </NavItem>
 
@@ -81,8 +70,22 @@ const Navbar = () => {
                   offset={-80}
                   smooth={true}
                   duration={500}
+                  onClick={closeMobileMenu}
                 >
                   Projects
+                </NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks
+                  to="about"
+                  offset={-100}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  onClick={closeMobileMenu}
+                >
+                  About
                 </NavLinks>
               </NavItem>
 

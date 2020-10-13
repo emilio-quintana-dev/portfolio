@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Button } from "../../globalStyles";
 import {
-  InfoSec,
-  InfoRow,
-  InfoColumn,
+  IntroSection,
+  Row,
+  Column,
   TextWrapper,
   TopLine,
   Heading,
-  Subtitle,
+  Text,
   ImgWrapper,
   Img,
 } from "./Intro.elements";
@@ -15,15 +15,15 @@ import {
 const Intro = ({ buttonLabel, description, headline, topLine, img, alt }) => {
   return (
     <>
-      <InfoSec>
+      <IntroSection>
         <Container>
-          <InfoRow>
-            <InfoColumn>
+          <Row>
+            <Column>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading>{headline}</Heading>
 
-                <Subtitle>{description}</Subtitle>
+                <Text>{description}</Text>
 
                 <a
                   href="https://github.com/emilio-quintana-dev"
@@ -34,25 +34,18 @@ const Intro = ({ buttonLabel, description, headline, topLine, img, alt }) => {
                   </Button>
                 </a>
               </TextWrapper>
-            </InfoColumn>
+            </Column>
 
-            <InfoColumn>
+            <Column>
               <ImgWrapper>
                 <Img src={img} alt={alt} />
               </ImgWrapper>
-            </InfoColumn>
-          </InfoRow>
+            </Column>
+          </Row>
         </Container>
-      </InfoSec>
+      </IntroSection>
     </>
   );
 };
 
 export default Intro;
-
-// {isAboutMe ? (
-//   <Link to="/files/emilio-resume.pdf" target="_blank" download>
-//     <Button big fontBig primary={primary}>
-//       {buttonLabel}
-//     </Button>{" "}
-//   </Link>

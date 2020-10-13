@@ -4,11 +4,6 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import {
   FooterContainer,
   FooterSubscription,
-  FooterSubHeading,
-  Form,
-  FormInput,
-  SubmitButton,
-  InputLabel,
   FooterLinksWrapper,
   FooterLinksContainer,
   FooterLinkItems,
@@ -46,38 +41,7 @@ const Footer = () => {
   return (
     <>
       <FooterContainer>
-        <FooterSubscription>
-          <FooterSubHeading>Contact Me</FooterSubHeading>
-          <Form onSubmit={sendEmail}>
-            <FormInput
-              name="name"
-              type="text"
-              placeholder="Name"
-              value={message.name}
-              onChange={(e) => setMessage({ ...message, name: e.target.value })}
-            />
-
-            <FormInput
-              name="email"
-              type="email"
-              placeholder="Email"
-              value={message.email}
-              onChange={(e) =>
-                setMessage({ ...message, email: e.target.value })
-              }
-            />
-
-            <FormInput
-              name="text"
-              type="text"
-              placeholder="Message"
-              value={message.text}
-              onChange={(e) => setMessage({ ...message, text: e.target.value })}
-            />
-
-            <SubmitButton fontBig>Send</SubmitButton>
-          </Form>
-        </FooterSubscription>
+        <FooterSubscription></FooterSubscription>
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
@@ -139,7 +103,7 @@ const Footer = () => {
 
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Blog Posts</FooterLinkTitle>
+              <FooterLinkTitle>Dev Posts</FooterLinkTitle>
               <FooterLink
                 href="https://dev.to/emilioquintana90/building-a-controlled-form-using-react-hooks-4fml"
                 target="_blank"
@@ -165,13 +129,17 @@ const Footer = () => {
                 Ruby's Enumerables
               </FooterLink>
             </FooterLinkItems>
+
+            <FooterLinkItems>
+              <FooterLinkTitle>Bio-hacking</FooterLinkTitle>
+              <FooterLink>Coming soon</FooterLink>
+            </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/">
               <SocialIcon />
-              emilio.dev
             </SocialLogo>
             <SocialIcons>
               <SocialIconLink

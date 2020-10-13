@@ -56,7 +56,7 @@ export const FormInput = styled.input`
   }
 
   @media screen and (max-width: 820px) {
-    width: 75%;
+    width: 50%;
     margin: 0 0 16px 0;
   }
 `;
@@ -79,7 +79,7 @@ export const SubmitButton = styled.button`
     background: ${({ primary }) => (primary ? "#0467FB" : "#4B59F7")};
   }
   @media screen and (max-width: 960px) {
-    width: 75%;
+    width: 50%;
   }
 `;
 

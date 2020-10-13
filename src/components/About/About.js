@@ -2,13 +2,13 @@ import React from "react";
 import { Container, Button } from "../../globalStyles";
 import { Link } from "react-router-dom";
 import {
-  InfoSec,
-  InfoRow,
-  InfoColumn,
+  AboutSection,
+  Row,
+  Column,
   TextWrapper,
   TopLine,
   Heading,
-  Subtitle,
+  Text,
   ImgWrapper,
   Img,
 } from "./About.elements";
@@ -16,32 +16,32 @@ import {
 const About = ({ buttonLabel, description, headline, topLine, img, alt }) => {
   return (
     <>
-      <InfoSec>
+      <AboutSection>
         <Container>
-          <InfoRow>
-            <InfoColumn>
+          <Row>
+            <Column>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading>{headline}</Heading>
 
-                <Subtitle>{description}</Subtitle>
+                <Text>{description}</Text>
 
                 <Link to="/files/emilio-resume.pdf" target="_blank" download>
-                  <Button big fontBig primary={false}>
+                  <Button big fontBig primary>
                     {buttonLabel}
                   </Button>{" "}
                 </Link>
               </TextWrapper>
-            </InfoColumn>
+            </Column>
 
-            <InfoColumn>
+            <Column>
               <ImgWrapper>
                 <Img src={img} alt={alt} />
               </ImgWrapper>
-            </InfoColumn>
-          </InfoRow>
+            </Column>
+          </Row>
         </Container>
-      </InfoSec>
+      </AboutSection>
     </>
   );
 };
