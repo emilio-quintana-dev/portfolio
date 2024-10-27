@@ -10,6 +10,8 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
+export const runtime = 'experimental-edge';
+
 const Work = () => (
   <Layout title="Quantum">
     <Container>

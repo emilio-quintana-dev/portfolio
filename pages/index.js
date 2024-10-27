@@ -17,6 +17,8 @@ import Section from '../components/section'
 import { IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
 
+export const runtime = 'experimental-edge';
+
 const Home = () => (
   <Layout>
     <Container>

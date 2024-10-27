@@ -5,6 +5,8 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbQuantum from '../public/images/works/quantum_eyecatch.png'
 
+export const runtime = 'experimental-edge';
+
 const Works = () => (
   <Layout title="Works">
     <Container>
