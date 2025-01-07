@@ -28,8 +28,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       p={2}
-      bg={active ? 'grassTeal' : undefined}
-      color={active ? '#202023' : inactiveColor}
+      borderBottom={active ? '2.5px solid #88ccca' : undefined}
+      color={active ? '#FFF' : inactiveColor}
       target={target}
       {...props}
     >

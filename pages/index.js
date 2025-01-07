@@ -28,7 +28,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a software developer based in Austin!
+        Hello, I&apos;m a software developer based in Chicago!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -36,7 +36,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Emilio Quintana
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Digital Craftsman ( Developer / Designer / Entrepreneur )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -69,11 +69,14 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          I&apos;m a freelance and a full-stack developer based in Austin with a
-          passion for building digital services/stuff. I&apos;m passionate
+          I&apos;m a full-stack developer based in Chicago with a
+          passion for building digital services/products. I&apos;m passionate
           for all things launching products, from planning and designing all the
           way to solving real-life problems with code.
         </Paragraph>
+
+        <Paragraph>Currently building the next-gen Ruby on Rails + React boilerplate to ship startups fast.</Paragraph>
+
         <Box align="center" my={4}>
           <Button
             as={NextLink}
@@ -97,15 +100,15 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2020</BioYear>
-          Completed a Bachelor&apos;s Program in Computer Information Systems at Lindenwood University.
+          Completed a Bachelor&apos;s Program in Computer Information Systems at <Link href="https://www.lindenwood.edu">Lindenwood University</Link>.
         </BioSection>
         <BioSection>
           <BioYear>2020</BioYear>
-          Completed Flatiron School&apos;s Fullstack Software Engineering Bootcamp.
+          Completed a Fullstack Software Engineering Bootcamp at <Link href="https://www.flatiron.com">Flatiron School</Link>.
         </BioSection>
         <BioSection>
           <BioYear>2024</BioYear>
-          Completed the Master&apos;s Program in Financial Technology at Nanyang Technological University Singapore.
+          Completed a Master&apos;s Program in Financial Technology at <Link href="https://www.ntu.edu">Nanyang Technological University Singapore</Link>.
         </BioSection>
         <BioSection>
           <BioYear>2020 to present</BioYear>
