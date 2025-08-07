@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(git reset:*)",
+      "Bash(pnpm remove:*)",
+      "Bash(rm:*)",
+      "Bash(mv:*)",
+      "Bash(pnpm run:*)",
+      "Bash(sed:*)"
+    ],
+    "deny": []
+  }
+}

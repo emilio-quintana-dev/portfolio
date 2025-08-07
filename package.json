@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
+    "pages:build": "npx @cloudflare/next-on-pages",
     "start": "next start",
     "prettier": "prettier --write .",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preview": "pnpm run pages:build && wrangler pages dev",
+    "deploy": "pnpm run pages:build && wrangler pages deploy"
   },
   "keywords": [],
   "author": "Emilio Quintana",
@@ -18,16 +21,17 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@vercel/analytics": "^1.1.1",
-    "framer-motion": "^10.16.4",
-    "next": "^13.5.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "framer-motion": "^12.23.12",
+    "next": "^15.4.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "react-icons": "^4.11.0",
     "three": "^0.157.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.13",
     "eslint": "^8.52.0",
-    "eslint-config-next": "^13.5.6",
+    "eslint-config-next": "^15.4.6",
     "prettier": "^3.0.3",
     "vercel": "^37.12.1"
   }
